@@ -1,0 +1,6 @@
+{% extends 'auctions/display.html' %} {% block body %}
+<div>
+  {%if user.username == bid.user.username%} Congratulations!! You have won this
+  auctions {% else %} Sorry!! Better luck next time {%endif%}
+</div>
+{% endblock %}

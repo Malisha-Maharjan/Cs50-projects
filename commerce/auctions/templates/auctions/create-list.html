@@ -1,0 +1,20 @@
+{% extends 'auctions/layout.html' %} {% block body %}
+<form action="{% url 'create_list' %}" method="post">
+  {% csrf_token %}
+  <label>Title: </label>
+  <input autofocus type="text" , name="title" /><br />
+  <label>Description: </label>
+  <input autofocus type="text" , name="description" /><br />
+  <label>Image URL: </label>
+  <input autofocus type="text" , name="image_url" /><br />
+  <label>Starting Bids($): </label>
+  <input autofocus type="number" , name="price" , min="0" /><br />
+  Categories:
+  <select name="category">
+    {% for option in categories%}
+    <option>{{ option }}</option>
+    {% endfor %}
+  </select>
+  <input type="submit" class="button" />
+  {% endblock %}
+</form>

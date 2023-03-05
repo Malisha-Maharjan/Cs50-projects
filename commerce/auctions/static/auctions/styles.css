@@ -1,0 +1,99 @@
+body {
+    padding: 10px;
+}
+
+
+.photo {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    object-fit: scale-down;
+}
+
+.list-photo {
+    height: 300px;
+    object-fit:contain;
+
+}
+.button {
+    background-color: rgba(11, 63, 232, 0.944); 
+    color: white ;
+    border-radius: 10px;
+}
+
+.list_header {
+    display: flex;
+    flex-direction: row;
+}
+
+.close {
+    margin: 8px;
+    border-radius: 100px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    color: rgb(10, 55, 93);
+    background-color: rgb(219, 98, 98);
+}
+
+.add-watch-list {
+    margin-bottom: 5px;
+    display: inline-block; font-family: Arial, sans-serif;
+    font-size: 10px; 
+    height: 25px;
+    border-radius: 6px;
+    color: white;
+    background-color: #009900;
+}
+
+.remove-watch-list {
+    margin-bottom: 5px;
+    display: inline-block; font-family: Arial, sans-serif;
+    font-size: 10px; 
+    height: 25px;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(122, 50, 50);
+}
+
+ @import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+ .card {
+     position: relative;
+     display: flex;
+     width: 450px;
+     flex-direction: column;
+     min-width: 0;
+     word-wrap: break-word;
+     background-color: #fff;
+     background-clip: border-box;
+     border: 1px solid #d2d2dc;
+     border-radius: 4px;
+     -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+     -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
+     box-shadow: 0px 0px 5px 0px rgb(161, 163, 164)
+ }
+
+ .card .card-body {
+     padding: 1rem 1rem
+ }
+
+ .card-body {
+     flex: 1 1 auto;
+     padding: 1.25rem
+ }
+
+ p {
+     font-size: 14px
+ }
+
+ h4 {
+     margin-top: 18px
+ }
+
+ .cross {
+     padding: 10px;
+     color: #d6312d;
+     cursor: pointer
+ }
+

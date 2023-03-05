@@ -1,0 +1,30 @@
+{% extends "auctions/layout.html" %} {% block body %} {%for list in lists%}
+<a href="{% url 'result' list.id%}" style="color: #0d1013">
+  <div class="body-block">
+    <table>
+      <tr>
+        <td>
+          <img
+            class="photo"
+            src="{{ list.image_url }}"
+            alt="{{ list.title }}"
+          />
+        </td>
+        <td style="width: 80px"></td>
+        <td>
+          <div>
+            <h2 id="list-name">{{ list.title }}</h2>
+            <h4>Staring Bid:${{ list.price }}</h4>
+            <div>{{ list.description }}</div>
+            <div>Listed By: {{ list.listed_by.username }}</div>
+            <div class="time" style="color: rgba(128, 128, 128, 0.783)">
+              Created {{ list.time }}
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr />
+</a>
+{% endfor %} {% endblock %}
